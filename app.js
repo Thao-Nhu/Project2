@@ -17,7 +17,7 @@ const MongoStore         = require('connect-mongo')(session);
 const flash              = require('connect-flash');
 
 mongoose
-  .connect('mongodb://localhost/lnconsulting', {useNewUrlParser: true})
+  .connect(process.env.MONGODB_URI, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -31,7 +31,7 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 const app = express();
 
 app.use(session({
-  secret: 'lnconsulting',
+  secret: process.env.SESSION,
   resave: false,
   saveUninitialized: true,
   store: new MongoStore( { mongooseConnection: mongoose.connection })
