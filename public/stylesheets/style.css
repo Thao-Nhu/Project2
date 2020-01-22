@@ -6,32 +6,69 @@ a {
   color: inherit;
   text-decoration: none; }
 
+@media (max-width: 900px) {
+  h2 {
+    font-size: 12px; } }
+
+.desktop-hidden {
+  display: none; }
+
+@media (max-width: 900px) {
+  .mobile-hidden {
+    display: none; }
+  .mobile-show {
+    display: block; } }
+
 .nav-bar {
   display: flex;
   align-items: center; }
 
+@media (max-width: 900px) {
+  .nav-bar {
+    flex-wrap: wrap; } }
+
 .nav-bar img {
-  height: calc(3em + 1vw); }
+  height: 58px; }
+
+@media (max-width: 900px) {
+  .nav-bar img {
+    height: 29px; } }
 
 .nav-bar-ul {
   display: flex;
   margin-left: auto;
-  font-size: calc(0.3em + 1vw); }
+  font-size: 20px; }
+
+@media (max-width: 900px) {
+  .nav-bar-ul {
+    font-size: 12px; } }
 
 .nav-bar-li {
   display: inline;
   list-style-type: none;
-  margin-right: calc(1.8em + 1vw);
+  margin-right: 52px;
   vertical-align: middle; }
 
+@media (max-width: 900px) {
+  .nav-bar-li {
+    margin-right: 8px; } }
+
 .nav-bar-li img {
-  height: calc(1.5em + 1vw); }
+  height: 45.99px; }
+
+@media (max-width: 900px) {
+  .nav-bar-li img {
+    height: 23px; } }
 
 .services {
   display: flex;
   color: dimgrey;
   text-align: center;
   height: 100%; }
+
+@media (max-width: 900px) {
+  .services {
+    flex-wrap: wrap; } }
 
 .services div {
   width: 33%;
@@ -40,6 +77,12 @@ a {
   margin-right: 20px;
   opacity: 0.8; }
 
+@media (max-width: 900px) {
+  .services div {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px; } }
+
 .services div:hover {
   opacity: 1;
   color: #9b2735; }
@@ -47,10 +90,18 @@ a {
 .service-photo {
   width: 79%; }
 
+@media (max-width: 900px) {
+  .service-photo {
+    width: 60%; } }
+
 .footer {
   display: flex;
   justify-content: center;
   font-size: 15px; }
+
+@media (max-width: 900px) {
+  .footer {
+    font-size: 12px; } }
 
 .footer p {
   margin-right: 30px; }
@@ -65,7 +116,11 @@ a {
   z-index: 1;
   background-color: #f1f1f1;
   width: 200px;
-  font-size: calc(0.2em + 1vw); }
+  font-size: 20px; }
+
+@media (max-width: 900px) {
+  .dropdown-content {
+    font-size: 12px; } }
 
 .dropdown-content a {
   padding: 20px 16px;
@@ -90,6 +145,12 @@ a {
   box-shadow: inset 0px 0px 15px dimgray;
   font-size: 20px; }
 
+@media (max-width: 900px) {
+  .form-field {
+    width: 300px;
+    font-size: 12px;
+    padding: 10px; } }
+
 .form-field * {
   box-sizing: border-box; }
 
@@ -98,6 +159,10 @@ a {
   padding: 0;
   max-width: 600px;
   margin: 0 auto; }
+
+@media (max-width: 900px) {
+  .flex-outer {
+    max-width: 300px; } }
 
 .flex-outer li {
   display: flex;
@@ -112,11 +177,25 @@ a {
   flex: 1 0 120px;
   max-width: 220px; }
 
+@media (max-width: 900px) {
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 60px;
+    max-width: 110px; } }
+
 .flex-outer > li > label + * {
   flex: 1 0 220px; }
 
+@media (max-width: 900px) {
+  .flex-outer > li > label + * {
+    flex: 1 0 110px; } }
+
 input {
   font-size: 20px; }
+
+@media (max-width: 900px) {
+  input {
+    font-size: 12px; } }
 
 .flex-outer li button {
   margin-left: auto;
@@ -129,11 +208,21 @@ input {
   border-radius: 2px;
   font-size: 16px; }
 
+@media (max-width: 900px) {
+  .flex-outer li button {
+    font-size: 12px;
+    padding: 0px; } }
+
 /*Formatting of forms-End*/
 .signupmessage {
   margin-top: 20px;
   font-size: 20px;
   font-weight: bold; }
+
+@media (max-width: 900px) {
+  .signupmessage {
+    margin-top: 5px;
+    font-size: 12px; } }
 
 .signupmessage a {
   text-decoration: underline; }
@@ -153,6 +242,12 @@ input {
   width: 500px;
   margin: 0 auto;
   font-size: 18px; }
+
+@media (max-width: 900px) {
+  .detail {
+    flex-wrap: wrap; }
+  .detail .comment {
+    font-size: 11px; } }
 
 /* BI page - end */
 /* Training - begin */
@@ -178,6 +273,13 @@ input {
 .lesson ol li {
   margin-bottom: 20px; }
 
+@media (max-width: 900px) {
+  .lessons {
+    flex-wrap: wrap; }
+  .lesson {
+    padding: 0px;
+    font-size: 11px; } }
+
 /* Training - end */
 /* Internal Control - begin */
 .internal-control {
@@ -195,15 +297,30 @@ input {
 .purchasing {
   margin-bottom: 100px; }
 
+@media (max-width: 900px) {
+  .title h2 {
+    font-size: 12px; }
+  .internal-control {
+    flex-wrap: wrap;
+    font-size: 11px; }
+  .internal-control-detail {
+    width: 100%; }
+  .purchasing {
+    margin-bottom: 0px; } }
+
 /* Internal Control - end */
 /* Your account page - begin */
 .welcome-message {
   text-align: right;
-  font-size: calc(0.3em + 1vw);
+  font-size: 20px;
   font-style: italic;
   padding-right: calc(1.8em + 1vw);
   color: #fff;
   background-color: #767676; }
+
+@media (max-width: 900px) {
+  .welcome-message {
+    font-size: 12px; } }
 
 .project-status-field {
   display: flex;
@@ -269,6 +386,10 @@ input {
   font-size: 15px;
   box-sizing: border-box; }
 
+@media (max-width: 900px) {
+  .project-detail-field {
+    font-size: 12px; } }
+
 .project-details-flex-outer {
   list-style-type: none;
   padding: 0;
@@ -286,6 +407,10 @@ input {
   font-size: 15px;
   border-radius: 10px; }
 
+@media (max-width: 900px) {
+  .project-details-flex-outer li form button {
+    font-size: 12px; } }
+
 .project-details-flex-outer > li > .label,
 .project-details-flex-outer li .field {
   flex: 1 0 120px;
@@ -293,6 +418,10 @@ input {
   height: 20px;
   display: flex;
   align-items: center; }
+
+@media (max-width: 900px) {
+  .project-details-flex-outer > li > .label {
+    background: #edecec; } }
 
 .label, .field {
   flex: 1;
@@ -307,6 +436,10 @@ input {
 
 .comment-form-field {
   width: 600px; }
+
+@media (max-width: 900px) {
+  .comment-form-field {
+    width: 300px; } }
 
 .comment-form-field * {
   box-sizing: border-box; }
@@ -350,6 +483,10 @@ input {
   border-radius: 2px;
   font-size: 12px; }
 
+@media (max-width: 900px) {
+  .comment-flex-outer li button {
+    padding: 2px; } }
+
 /* Your account page - end */
 /* About us page - start */
 .slogan {
@@ -363,8 +500,18 @@ input {
   color: white;
   background: dimgray; }
 
+@media (max-width: 900px) {
+  .slogan {
+    width: 300px;
+    font-size: 12px; } }
+
 .slogan p {
   margin: 0 auto; }
+
+@media (max-width: 900px) {
+  .slogan p {
+    margin: 0 auto;
+    text-align: center; } }
 
 .slogan-detail {
   width: 750px;
@@ -374,6 +521,11 @@ input {
   text-align: justify;
   border: 1px solid;
   border-radius: 10px; }
+
+@media (max-width: 900px) {
+  .slogan-detail {
+    width: 300px;
+    font-size: 12px; } }
 
 .slogan-detail p {
   padding: 20px; }
@@ -387,6 +539,10 @@ input {
   font-size: 20px;
   text-align: center;
   padding: 20px; }
+
+@media (max-width: 900px) {
+  .ourlocation {
+    font-size: 14px; } }
 
 /* Our location page - end*/
 /* Contact us page - start*/
@@ -407,6 +563,13 @@ input {
   height: 100px;
   width: 800px;
   border-radius: 20px; }
+
+@media (max-width: 900px) {
+  .contactus {
+    font-size: 14px;
+    align-items: flex-start; }
+  .contactus p {
+    width: 500px; } }
 
 /* Contact us page - end*/
 

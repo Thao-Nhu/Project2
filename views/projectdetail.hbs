@@ -30,41 +30,41 @@
     
     {{#if costEstimate}}
       <div class="project-status project-status-active">Cost Estimate</div>
-      <div class="project-status">Started</div>
-      <div class="project-status">Interview</div>
-      <div class="project-status">Development</div>
-      <div class="project-status">Delivered</div>
+      <div class="project-status mobile-hidden">Started</div>
+      <div class="project-status mobile-hidden">Interview</div>
+      <div class="project-status mobile-hidden">Development</div>
+      <div class="project-status mobile-hidden">Delivered</div>
     {{/if}}
 
     {{#if started}}
-      <div class="project-status">Cost Estimate</div>
+      <div class="project-status mobile-hidden">Cost Estimate</div>
       <div class="project-status project-status-active">Started</div>
-      <div class="project-status">Interview</div>
-      <div class="project-status">Development</div>
-      <div class="project-status">Delivered</div>
+      <div class="project-status mobile-hidden">Interview</div>
+      <div class="project-status mobile-hidden">Development</div>
+      <div class="project-status mobile-hidden">Delivered</div>
     {{/if}}
 
     {{#if interview}}
-      <div class="project-status">Cost Estimate</div>
-      <div class="project-status">Started</div>
+      <div class="project-status mobile-hidden">Cost Estimate</div>
+      <div class="project-status mobile-hidden">Started</div>
       <div class="project-status project-status-active">Interview</div>
-      <div class="project-status">Development</div>
-      <div class="project-status">Delivered</div>
+      <div class="project-status mobile-hidden">Development</div>
+      <div class="project-status mobile-hidden">Delivered</div>
     {{/if}}
 
     {{#if development}}
-      <div class="project-status">Cost Estimate</div>
-      <div class="project-status">Started</div>
-      <div class="project-status">Interview</div>
+      <div class="project-status mobile-hidden">Cost Estimate</div>
+      <div class="project-status mobile-hidden">Started</div>
+      <div class="project-status mobile-hidden">Interview</div>
       <div class="project-status project-status-active">Development</div>
-      <div class="project-status">Delivered</div>
+      <div class="project-status mobile-hidden">Delivered</div>
     {{/if}}
 
     {{#if delivered}}
-      <div class="project-status">Cost Estimate</div>
-      <div class="project-status">Started</div>
-      <div class="project-status">Interview</div>
-      <div class="project-status">Development</div>
+      <div class="project-status mobile-hidden">Cost Estimate</div>
+      <div class="project-status mobile-hidden">Started</div>
+      <div class="project-status mobile-hidden">Interview</div>
+      <div class="project-status mobile-hidden">Development</div>
       <div class="project-status project-status-active">Delivered</div>
     {{/if}}
  
