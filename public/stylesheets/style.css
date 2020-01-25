@@ -127,12 +127,18 @@ a {
   text-decoration: none;
   display: block; }
 
-.dropdown-content a:hover {
+.dropdown-content-a-hover {
   background-color: #ddd; }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content-hover {
   display: block; }
 
+/*.dropdown-content a:hover{
+  background-color:#ddd
+}
+.dropdown:hover .dropdown-content {
+  display:block
+}*/
 /*Formatting of forms-Start*/
 .form-field {
   border: 1px solid;
